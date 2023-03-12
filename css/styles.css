@@ -1,0 +1,160 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Custom properties */
+:root {
+  --clr-primary-red: hsl(0, 100%, 74%);
+  --clr-primary-green: hsl(154, 59%, 51%);
+  --clr-accent: hsl(248, 32%, 49%);
+  --clr-neutral-dark: hsl(249, 10%, 26%);
+  --clr-neutral-grayish: hsl(246, 25%, 77%);
+  --clr-white: #fff;
+
+  --fs-50px: 3.125rem;
+  --fs-28px: 1.75rem;
+  --fs-15px: 0.9375rem;
+  --fs-14px: 0.875rem;
+  --fs-11px: 0.6875rem;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  --border-radius-s: 0.3125rem;
+  --border-radius-m: 0.625rem;
+}
+
+/* Globals */
+body {
+  background-color: var(--clr-primary-red);
+  background-image: url(../images/bg-intro-mobile.png);
+  color: var(--clr-white);
+  font-family: 'Poppins', sans-serif;
+  font-weight: var(--fw-medium);
+  line-height: 1.6;
+  min-height: 100vh;
+
+  display: grid;
+  place-items: center;
+}
+
+p,
+h1 {
+  overflow-wrap: break-word;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+input {
+  border: 1px solid var(--clr-neutral-grayish);
+  border-radius: var(--border-radius-s);
+  font-size: var(--fs-14px);
+  font-weight: var(--fw-semi-bold);
+  padding: 0.85rem;
+  width: 100%;
+}
+
+input:focus {
+  outline: 2px solid var(--clr-accent);
+}
+
+/* Accesibility class */
+.visually-hidden {
+  border-width: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}
+
+/* Utility class */
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* LAYOUT */
+.main {
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* Description section */
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.description__heading {
+  font-size: var(--fs-28px);
+  font-weight: var(--fw-bold);
+}
+
+/* Free trial section */
+.cta {
+  background-color: var(--clr-accent);
+  border-radius: var(--border-radius-m);
+  text-align: center;
+  padding: 1.15rem 3rem;
+}
+
+.form {
+  background-color: var(--clr-white);
+  border-radius: var(--border-radius-m);
+  padding: 1.5rem;
+}
+
+.form__btn {
+  border: none;
+  border-radius: var(--border-radius-s);
+  background-color: var(--clr-primary-green);
+  color: var(--clr-white);
+  font-size: var(--fs-15px);
+  font-weight: var(--fw-semi-bold);
+  text-transform: uppercase;
+  padding: 0.95rem 0;
+  box-shadow: inset 0px -6px 0px 0px hsl(154, 57%, 46%);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (hover: hover) {
+  .form__btn:hover {
+    opacity: 0.8;
+  }
+}
+
+.form__info-text {
+  color: var(--clr-neutral-grayish);
+  font-size: var(--fs-11px);
+  font-weight: var(--fw-regular);
+  padding: 0 1.2rem;
+  text-align: center;
+}
+
+.form__link {
+  color: var(--clr-primary-red);
+  font-weight: var(--fw-bold);
+  text-decoration: none;
+}
+
+@media (hover: hover) {
+  .form__link:hover {
+    text-decoration: underline;
+  }
+}
