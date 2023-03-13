@@ -29,13 +29,13 @@ Users should be able to:
 
 ### 🖼️ Screenshot
 
-![](./screenshot.jpg)
+![](./images/Screenshot.png)
 
 ### 🔗 Links
 
 - Challenge URL: [Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1)
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/NoaSalgado/Sign-Up-Form-Intro-Component](https://github.com/NoaSalgado/Sign-Up-Form-Intro-Component)
+- Live Site URL: [https://noasalgado.github.io/Sign-Up-Form-Intro-Component/](https://noasalgado.github.io/Sign-Up-Form-Intro-Component/)
 
 ## 🚀 My process
 
@@ -54,12 +54,8 @@ With this challenge I learned and practiced about some basic form validations on
 I also learned how to hide labels, by design requirement in an accesible way:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
 <label for="password" class="visually-hidden">Password</label>
-
-````
+```
 
 ```css
 .visually-hidden {
@@ -72,7 +68,7 @@ I also learned how to hide labels, by design requirement in an accesible way:
   white-space: nowrap !important;
   width: 1px !important;
 }
-````
+```
 
 ### 🎯 Continued development
 
