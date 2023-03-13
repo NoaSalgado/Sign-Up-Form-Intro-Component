@@ -85,7 +85,7 @@ input:focus {
   width: 1px !important;
 }
 
-/* Utility class */
+/* Utility classes */
 .flex {
   display: flex;
   flex-direction: column;
@@ -153,6 +153,10 @@ input:focus {
   box-shadow: var(--box-shadow);
 }
 
+.form__group {
+  position: relative;
+}
+
 .form__btn {
   border: none;
   border-radius: var(--border-radius-s);
@@ -191,4 +195,27 @@ input:focus {
   .form__link:hover {
     text-decoration: underline;
   }
+}
+
+/* Form validation styles */
+
+input.error {
+  border: 2px solid var(--clr-primary-red);
+}
+
+p.error {
+  color: var(--clr-primary-red);
+  font-size: var(--fs-14px);
+  font-style: italic;
+  text-align: right;
+  margin-top: 0.5em;
+}
+
+.fa-solid.fa-circle-exclamation {
+  color: var(--clr-primary-red);
+  font-size: var(--fs-28px);
+
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
 }

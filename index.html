@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Font Awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+
+    <!-- Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Custom Css -->
     <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="icon"
@@ -16,6 +25,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <script src="js/index.js" defer></script>
 
     <title>Intro component with sign up form</title>
   </head>
@@ -35,7 +45,7 @@
           <p class="cta__text">Try it free 7 days then $20/mo. thereafter</p>
         </div>
 
-        <form class="form flex">
+        <form class="form flex" id="form">
           <div class="form__group">
             <label for="first-name" class="visually-hidden">First Name</label>
             <input type="text" id="first-name" placeholder="First Name" />
@@ -53,7 +63,7 @@
 
           <div class="form__group">
             <label for="password" class="visually-hidden">Password</label>
-            <input type="password" placeholder="Password" />
+            <input type="password" id="password" placeholder="Password" />
           </div>
 
           <button type="submit" class="form__btn">Claim your free trial</button>
